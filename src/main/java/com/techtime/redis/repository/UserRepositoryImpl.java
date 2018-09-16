@@ -15,11 +15,9 @@ public class UserRepositoryImpl implements UserRepository {
     
     private static final String USER_KEY = "USER";
     
-    private RedisTemplate<String, User> redisTemplate;
     private HashOperations hashOperations;
     
     public UserRepositoryImpl(RedisTemplate<String, User> redisTemplate) {
-        this.redisTemplate = redisTemplate;
         hashOperations = redisTemplate.opsForHash();
     }
     

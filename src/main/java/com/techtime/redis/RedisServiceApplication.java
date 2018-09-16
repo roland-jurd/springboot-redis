@@ -12,11 +12,6 @@ import com.techtime.redis.model.User;
 @SpringBootApplication
 public class RedisServiceApplication {
 	
-	//TODO: docker
-	//TODO: swagger
-	//TODO: postman or mockito
-	
-	
 	public static void main(String[] args) {
 		SpringApplication.run(RedisServiceApplication.class, args);
 	}
